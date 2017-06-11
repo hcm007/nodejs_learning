@@ -1,0 +1,14 @@
+set up nodejs environment in ubuntu container
+"""
+docker run -itd ubuntu
+docker exec -it containerID bash
+apt-get update & apt-get upgrade
+apt-get install nodejs
+"""
+to test nodejs work or not
+"""
+cat > hello.js << EOF
+console.log('hello,world')
+EOF
+nodejs hello.js
+""" 
