@@ -1,2 +1,2 @@
 # nodejs_learning
-just for node
+make note about nodejs
