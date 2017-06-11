@@ -1,0 +1,36 @@
+## js interact with html
+** use getElementById() to change html **
+"""
+document.getElementById("demo").innerHTML = "Hello JavaScript";
+"""
+## js where to 
+** in HTML, js code must be inserted between <script> and </script> tags
+"""
+<script>
+document.getElementById("demo").innerHTML = "My first Javascript";
+</script>
+
+## js functions and events
+** a function can be called when an event occurs, like when the user click a button **
+## js in <head> or <body>
+## js can also be placed in external files:
+"""
+<script src="myScript.js"></script>
+"""
+## external references
+"""
+<script src="http://www.w3schools.com/js/myScript1.js"></script>
+"""
+## use a script located in a specific folder on the current web site:
+"""
+<script src="/js/myScript1.js"></script>
+"""
+### a script located in the same folder as the current page
+"""
+<script src="myScript1.js"></script>
+"""
+
+"""
+
+
+
