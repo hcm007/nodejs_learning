@@ -1,0 +1,5 @@
+## js display in four different ways:
+1. write into an HTML element using innner HTML
+2. write into the HTML output using document.write()
+3. write into an alert box, using window.alert()
+4. write into the browser console, using console.log()
