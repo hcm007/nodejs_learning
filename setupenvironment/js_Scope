@@ -1,0 +1,85 @@
+## Variables
+** local js viriables **
+##### local variable example
+function myFunction() {
+	var carName = "Volvo";
+}
+##### global js variables
+var carName = "Volvo";
+function myFunction(){
+
+}
+** automatically global **
+##### if you assign a value to a varible that has not declared , it will automatically become a global variable
+myFunction();
+function myFunction() {
+carName = "Volvl";
+}
+
+** global variables in HTML **
+##### With js, the global scope is the complete js environment. In html, the global scope is the window object, All global variables belong to the window object
+##### code here use window.carName
+var carName = "Volvo";
+
+** the lifetime of js variable starts when it is declared **
+** In a web browser, global varibales are deleted when you close the browser window, but remains available to new pages loaded into the same window **
+
+# js events
+** HTML events are "things" that happen to HTML element. **
+** when js is used in HTML pages, js can "react" on these events. **
+
+** HTML Events **
+#### some examples of HTML events:
+#1. An HTML web page has finished loading
+#2. An HTML input field was changed
+#3. An HTML button was clicked
+** js lets u execute code when events are detected , HTML allows event handler attribute, with js code to be added to HTML elements **
+##### with single quotes:
+<element event='some js'>
+<element event="some js">
+
+** example onclick attribute (with code), is added to a button element: **
+##### in the example below, the js code changes the content of the element with id="demo"
+<button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+##### in the next example, the code changes the content of its own element:
+<button onclick="this.innerHTML = Date()">The time is?</button>
+** js code is often several lines long, It is more common to see event attributes calling functions: **
+<button onclick="displayDate()">The time is?</button>
+<script>
+function displayDate() {
+	document.getElementById("demo").innerHTML = Date();
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

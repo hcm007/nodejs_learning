@@ -30,6 +30,46 @@ function myFunction (){
 	document.getElementById("demo2").innerHTML = "How are you?";
 }
 ## keyword
+break
+continue
+debugger
+do ... while
+for
+function
+if ... else
+return
+try ...
+catch
+var
+
+** js Function syntax **
+function name(parameter1, parameter2, parameter3){
+	code to be executed
+}
+** accessing a function without () will return the function definition instead of the function result: **
+"""
+function toCelsius(fahrenheit){
+	return (5/9) * (fahrenheit - 32);
+}
+document.getElementById("demo").innerHTML = toCelsius;
+"""
+## Accessing Object Properties
+
+** can access object properties in two ways: **
+"""
+objectName.propertyName
+or
+objectName["propertyName"]
+"""
+** access object methods **
+objectName.methodName()
+
+** access the fullName method, without(), it will return the function definition:
+name = person.fullName;
+
+** js variable is declared with the keyword "new" the variable is created as an object:
+var x = new String();
+** in js, object and functions are also variables
 
 
 

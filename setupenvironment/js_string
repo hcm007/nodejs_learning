@@ -1,0 +1,192 @@
+## js string
+** string length **
+var txt = "abc";
+var sln = txt.length;
+
+** avoid code lines longer than 80 charaster **
+** the best place to break it is after an operator **
+document.getElementById("demo").innerHTML =
+"Hello Dolly!";
+
+** break up a code line within a text string with a single backslash: **
+document.getElementById("demo").innerHTML = "Hello \
+Dolly!";
+** a safer way to break up a string, is to use string addition: **
+document.getElementById.innerHTML = "Hello" +
+"Dolly!";
+
+** CANNOT BREAK UP A CODE LINE WITH A BACKSLASH **
+document.getElementById("demo").innerHTML = \
+"Hello Dolly!";
+** string can be objects **
+** x will return string **
+** y will return object **
+var x = "John";
+var y = new String("John");
+(x == y) is true because x and y have equal values
+(x === y) is false because x and y have different types (string and object)
+** WRONG EXAMPE **
+x = new String('John')
+y = new String('John')
+(x == y) is false because x and y are different objects
+
+# js string methods
+#1. the indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string
+** return -1 there is no string in string **
+var str = "Please locate where 'locate' occurs!";
+var pros = str.indexOf("locate");
+var re = str.lastIndexOf("locate");
+** methods accept a second parameter as the string position for the search:**
+var pos = str.indexOf("locate",15);
+
+var pos = str.search("locate");
+** search() method can take much more powerful search values**
+##### powerful search values in the chapter about regular expressions
+
+** slice() extracts a part of a string and returns the extracted part in a new string **
+var str = "Apple, Banana, Kiwi";
+var res = str.slice(7,13);
+##### a parameter is negative the position is counted from the end of the string
+var res = str.slice(-12,-6);
+##### u omit the second parameter, the method will slice out the rest of the string:
+var res = str.slice(7);
+var res = str.slice(-12);
+** the substring() method **
+substring() is similar to slice(). the difference is that substring() cannot accept negative index
+var str = "Apple, Banana, Kiwi";
+var res = str.substring(7,13)
+##### second parameter specifies the length of the extracted part
+var str = "Apple, Banana, Kiwi";
+var res = str.substr(7,6)
+
+** replace string content **
+str = "Please visit Microsoft!";
+var n = str.replace("Microsoft","W3School");
+##### replace() function replaces only the first match
+
+** replace all matches use a regular expression with a /g flag (global math) **
+str = "Please visit Microsoft and Microsoft!";
+var n = str.replace(/Microsoft/g,"W3School");
+
+** To replace case insensitive, use regular expression with an /i flag(insensitive): **
+var n = str.replace(/microsoft/gi,"W3school")
+
+** convert to upper and lower case **
+var text1 = "Hello world!";
+var text2 = text1.toUpperCase();
+** convert to lower case with toLowerCase() **
+
+** charAt() method returns the character at a specified index in a string **
+var str = "HELLO WORLD";
+str.charAt(0);
+str.charCodeAt(0); //returns 72
+
+** access a string as an array is unsafe **
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
